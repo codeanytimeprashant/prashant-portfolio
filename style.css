@@ -585,3 +585,77 @@ body {
     padding: 1.5rem;
   }
 }
+
+
+@media (max-width: 768px) {
+  /* Fix text and spacing inside hero */
+  .hero {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-bio {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn,
+  .btn-secondary {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .motto {
+    font-size: 0.8rem;
+    margin-top: 12px;
+  }
+
+  /* Resize profile image and icons */
+  .image-wrapper img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .tech-row img,
+  .social-icons a img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tech-icons {
+    gap: 16px;
+    margin-top: 30px;
+  }
+
+  .tech-row {
+    gap: 12px;
+  }
+
+  /* Fix social icon overlap */
+  .social-icons {
+    position: relative;
+    justify-content: center;
+    margin-top: 20px;
+    left: 0;
+    transform: none;
+  }
+}
