@@ -15,12 +15,12 @@ function showNextText() {
   if (!typingElement) return;
 
   typingElement.classList.remove("fade-in");
-  void typingElement.offsetWidth; // force reflow to restart animation
+  void typingElement.offsetWidth; 
   typingElement.textContent = textList[index];
   typingElement.classList.add("fade-in");
 
   index = (index + 1) % textList.length;
-  setTimeout(showNextText, 2500); // change every 2.5 seconds
+  setTimeout(showNextText, 2500);
 }
 
 document.addEventListener("DOMContentLoaded", showNextText);
